@@ -1,4 +1,4 @@
-import CREATE_USER from "../actions/user-action";
+// import CREATE_USER from "../actions/user-action";
 import {
   ADD_USER,
   DELETE_USER,
@@ -13,13 +13,18 @@ export default function userReducer({users}, action) {
     case ADD_USER:
       return [...users , action.payload];
     case UPDATE_USER:
-      return users.filter((userItem)=>{
-        
+       let newArray = users.filter((userItem)=>{
+        userItem.Id== action.payload.Id
       });
+      users[users.indexOf(newArray[0])] = action.payload
+      return [...users]
     case DELETE_USER:
-      return;
+       newArray = users.filter((userItem)=>{
+        userItem.Id !== action.payload
+       });
+       return [...newArray]
 
     default:
-      return state;
+      return {users};
   }
 }
