@@ -28,6 +28,7 @@ const usersStore = createStore(userReducer,{user:[]},enhancers)
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Provider store={usersStore}>
+    <h1>HOME-COMPONENT</h1>
     <App />
   </Provider>
 )
