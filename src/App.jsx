@@ -9,10 +9,10 @@ function App() {
     <div className="App">
       <Home/>
       <MyForm/>
-        <a href="https://vitejs.dev" target="_blank">
+        <a href=" https://vitejs.dev " target="_blank">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
         </a>
-        <a href="https://reactjs.org" target="_blank">
+        <a href=" https://reactjs.org " target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
     </div>
