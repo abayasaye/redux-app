@@ -11,6 +11,7 @@ export default function userReducer({users}, action) {
     case GET_BY_ID:
       return [...users];
     case ADD_USER:
+      console.log(users);
       return [...users , action.payload];
     case UPDATE_USER:
        let newArray = users.filter((userItem)=>{

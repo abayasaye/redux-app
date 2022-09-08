@@ -23,12 +23,12 @@ const enhancers = compose(
   window._REDUX_DEVTOOLS_EXTENSTION_()
 );
 
-const usersStore = createStore(userReducer,{user:[]},enhancers)
+const usersStore = createStore(userReducer,{users:[{fName:"abay",lName:"asaye",age:26,email:"abay3292@gmd.com"}]},enhancers)
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Provider store={usersStore}>
-    <h1>HOME-COMPONENT</h1>
+    <h1></h1>
     <App />
   </Provider>
 )
