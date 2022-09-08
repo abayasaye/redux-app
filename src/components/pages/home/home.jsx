@@ -14,6 +14,7 @@ function Home() {
   return (
     <div className="home">
       <h1>home-component</h1>
+      <h2>hello world</h2>
     </div>
   );
 };

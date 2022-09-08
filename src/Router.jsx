@@ -1,7 +1,7 @@
 const Router = ()=>{
 return(
     <div>
-        <h1>ROUTER</h1>
+        <h1>ROUTER-COMPONENT</h1>
     </div>
 )
 }
