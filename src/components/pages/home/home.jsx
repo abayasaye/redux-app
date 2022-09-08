@@ -1,6 +1,15 @@
 import "./home.css";
 import React from "react";
+import { connect } from "react-redux";
 
+
+const mapStateToProps = (state)=>{
+  return {users : state.users}
+}
+
+const mapDispatchToProps = (dispatch)=>({
+  addNewUser : ()=> dispatch(adduser(userObj)),
+})
 function Home() {
   return (
     <div className="home">
@@ -9,4 +18,4 @@ function Home() {
   );
 };
 
-export default Home;
+export default connect(mapStateToProps,mapDispatchToProps)(Home);
