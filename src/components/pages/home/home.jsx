@@ -1,12 +1,12 @@
 import "./home.css";
 import React from "react";
 
-function template() {
+function Home() {
   return (
     <div className="home">
-      <h1>home</h1>
+      <h1>home-component</h1>
     </div>
   );
 };
 
-export default template;
+export default Home;
