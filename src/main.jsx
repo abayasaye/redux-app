@@ -17,7 +17,7 @@ import './index.css'
 import {createStore,compose} from 'redux'
 import {Provider} from 'react-redux'
 import userReducer from './store/reducers/user-reducer'
-import combine from ''
+import c ombine from ''
 
 const enhancers = compose(
   window._REDUX_DEVTOOLS_EXTENSTION_&&
